@@ -13,11 +13,11 @@ jobs:
     steps:
       # 1. Mengambil kode dari repository
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2. Setup Python
       - name: Set up Python 3.12
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12.7'
 
@@ -33,7 +33,7 @@ jobs:
           
       # 5. Menyimpan artefak model ke GitHub (Syarat Skilled)
       - name: Upload Model Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trained-model-artifact
           path: MLProject/model_output/
