@@ -1,0 +1,12 @@
+digest: 4d89bb40
+name: dataset
+profile: '{"num_rows": 268, "num_elements": 2144}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "age", "required": true},
+  {"type": "long", "name": "sex", "required": true}, {"type": "double", "name": "bmi",
+  "required": true}, {"type": "double", "name": "children", "required": true}, {"type":
+  "long", "name": "smoker", "required": true}, {"type": "long", "name": "region_northwest",
+  "required": true}, {"type": "long", "name": "region_southeast", "required": true},
+  {"type": "long", "name": "region_southwest", "required": true}]}'
+source: '{"tags": {"mlflow.user": "alwand", "mlflow.source.name": "modelling.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "52babd0c4758dde99523452a3ee447323b9c0576"}}'
+source_type: code

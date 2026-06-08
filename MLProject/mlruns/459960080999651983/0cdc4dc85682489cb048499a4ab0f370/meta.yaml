@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kuliah/intern/dicoding/pembelajaran/ML-Ops/kriteria-3/MLProject/mlruns/459960080999651983/0cdc4dc85682489cb048499a4ab0f370/artifacts
+end_time: 1780937600693
+entry_point_name: ''
+experiment_id: '459960080999651983'
+lifecycle_stage: active
+run_id: 0cdc4dc85682489cb048499a4ab0f370
+run_name: RandomForest_Basic
+run_uuid: 0cdc4dc85682489cb048499a4ab0f370
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780937597180
+status: 4
+tags: []
+user_id: alwand

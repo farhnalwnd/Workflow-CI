@@ -7,8 +7,9 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 import os
 
 def train_basic_model():
-    # Mengatur tracking URI ke localhost sesuai kriteria
-    mlflow.set_tracking_uri("http://127.0.0.1:5000")
+    # Mengatur tracking URI ke localhost jika tidak di CI
+    if not os.environ.get("GITHUB_ACTIONS"):
+        mlflow.set_tracking_uri("http://127.0.0.1:5000")
     mlflow.set_experiment("Insurance_Charges_Basic")
     
     print("Memuat dataset preprocessing...")
