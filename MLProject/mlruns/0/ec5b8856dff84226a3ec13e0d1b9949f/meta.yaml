@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kuliah/intern/dicoding/pembelajaran/ML-Ops/kriteria-3/MLProject/mlruns/0/ec5b8856dff84226a3ec13e0d1b9949f/artifacts
+end_time: 1780937961578
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: ec5b8856dff84226a3ec13e0d1b9949f
+run_name: delicate-shrike-104
+run_uuid: ec5b8856dff84226a3ec13e0d1b9949f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780937952477
+status: 3
+tags: []
+user_id: alwand

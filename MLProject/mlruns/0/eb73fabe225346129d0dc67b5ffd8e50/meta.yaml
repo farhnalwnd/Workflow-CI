@@ -1,0 +1,15 @@
+artifact_uri: file:///home/kuliah/intern/dicoding/pembelajaran/ML-Ops/kriteria-3/MLProject/mlruns/0/eb73fabe225346129d0dc67b5ffd8e50/artifacts
+end_time: 1780937938674
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: eb73fabe225346129d0dc67b5ffd8e50
+run_name: languid-eel-236
+run_uuid: eb73fabe225346129d0dc67b5ffd8e50
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780937935814
+status: 4
+tags: []
+user_id: alwand
