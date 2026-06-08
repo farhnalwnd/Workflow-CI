@@ -32,7 +32,7 @@ jobs:
       - name: Run MLflow Project
         run: |
           cd MLProject
-          mlflow run . --no-conda
+          mlflow run . --env-manager local
           
       # 5. Menyimpan artefak model ke GitHub (Syarat Skilled)
       - name: Upload Model Artifact
