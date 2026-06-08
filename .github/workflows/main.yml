@@ -1,0 +1,39 @@
+name: Re-training Model CI
+
+# Workflow ini akan berjalan setiap kali ada push ke branch main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  train-and-save-model:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Mengambil kode dari repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Setup Python
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.7'
+
+      # 3. Instal MLflow untuk menjalankan project
+      - name: Install MLflow
+        run: pip install mlflow==2.19.0
+
+      # 4. Menjalankan MLflow Project (Otomatis membaca MLProject dan conda.yaml)
+      - name: Run MLflow Project
+        run: |
+          cd MLProject
+          mlflow run . --no-conda
+          
+      # 5. Menyimpan artefak model ke GitHub (Syarat Skilled)
+      - name: Upload Model Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: trained-model-artifact
+          path: MLProject/model_output/
